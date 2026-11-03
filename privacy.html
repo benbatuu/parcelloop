@@ -1,0 +1,731 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#031241">
+    <title>Privacy Policy — Parcel Loop</title>
+    <style>
+        :root {
+            --navy: #031241;
+            --steel: #506C9E;
+            --honey: #FDD30D;
+            --orange: #FB9B03;
+            --cream: #FFF6E8;
+            --paper: #FFFCF6;
+            --ink: #1b2945;
+            --muted: #68748a;
+            --line: #e7e4dc;
+            --coral: #F06455;
+            --mint: #21C29E;
+            --sky: #2185EF;
+            --plum: #832EC6
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 22px
+        }
+
+        body {
+            margin: 0;
+            color: var(--ink);
+            background: radial-gradient(ellipse at 8% 0%, #fdd30d2b, transparent 34rem), radial-gradient(ellipse at 100% 24%, #21c29e1a, transparent 30rem), var(--cream);
+            font: 16px/1.72 Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+            -webkit-font-smoothing: antialiased
+        }
+
+        a {
+            color: #2455a4;
+            text-underline-offset: 3px
+        }
+
+        .topbar {
+            background: var(--navy);
+            color: #fff;
+            border-bottom: 4px solid var(--honey)
+        }
+
+        .topbar-inner {
+            width: min(1100px, calc(100% - 40px));
+            margin: auto;
+            min-height: 76px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 18px
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: white;
+            text-decoration: none;
+            font-weight: 900;
+            letter-spacing: -.045em;
+            font-size: 1.3rem
+        }
+
+        .mark {
+            width: 42px;
+            height: 42px;
+            display: grid;
+            place-items: center;
+            color: var(--navy);
+            background: linear-gradient(145deg, #ffe96b, var(--honey) 58%, var(--orange));
+            border: 2px solid #fff3a4;
+            border-radius: 13px;
+            box-shadow: 0 4px 0 #b96b05;
+            font-size: 1.5rem
+        }
+
+        .brand small {
+            display: block;
+            color: #c4d0e8;
+            font-size: .68rem;
+            letter-spacing: .13em;
+            text-transform: uppercase;
+            margin-top: -4px
+        }
+
+        .top-label {
+            border: 1px solid #ffffff3d;
+            border-radius: 999px;
+            padding: 7px 12px;
+            color: #e3eafa;
+            font-size: .78rem;
+            font-weight: 700
+        }
+
+        .hero {
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(135deg, var(--navy), #173768 65%, #244b70);
+            color: white;
+            padding: 66px 20px 78px
+        }
+
+        .hero:before,
+        .hero:after {
+            content: "";
+            position: absolute;
+            pointer-events: none;
+            border-radius: 50%;
+            border: 2px solid #ffffff14
+        }
+
+        .hero:before {
+            width: 360px;
+            height: 360px;
+            right: -80px;
+            top: -150px
+        }
+
+        .hero:after {
+            width: 220px;
+            height: 220px;
+            right: 20px;
+            top: -80px
+        }
+
+        .hero-inner {
+            width: min(900px, 100%);
+            margin: auto;
+            position: relative;
+            z-index: 1
+        }
+
+        .eyebrow {
+            display: inline-block;
+            color: var(--navy);
+            background: var(--honey);
+            border-radius: 7px;
+            padding: 5px 11px;
+            text-transform: uppercase;
+            letter-spacing: .12em;
+            font-size: .72rem;
+            font-weight: 900;
+            box-shadow: 0 3px 0 #bd8200
+        }
+
+        h1 {
+            margin: 22px 0 12px;
+            font-size: clamp(2.55rem, 7vw, 4.8rem);
+            letter-spacing: -.065em;
+            line-height: .99;
+            font-weight: 950
+        }
+
+        h1 span {
+            color: var(--honey)
+        }
+
+        .hero p {
+            max-width: 640px;
+            color: #dbe5f5;
+            font-size: 1.08rem;
+            margin: 20px 0 0
+        }
+
+        .meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 27px
+        }
+
+        .meta span {
+            background: #ffffff17;
+            border: 1px solid #ffffff24;
+            padding: 8px 12px;
+            border-radius: 10px;
+            font-size: .83rem
+        }
+
+        .meta strong {
+            color: var(--honey)
+        }
+
+        .layout {
+            width: min(1100px, calc(100% - 40px));
+            margin: -28px auto 80px;
+            position: relative;
+            z-index: 2;
+            display: grid;
+            grid-template-columns: 250px minmax(0, 1fr);
+            align-items: start;
+            gap: 26px
+        }
+
+        .toc,
+        .policy {
+            background: var(--paper);
+            border: 1px solid #03124114;
+            border-radius: 22px;
+            box-shadow: 0 20px 60px #0312411f
+        }
+
+        .toc {
+            padding: 22px 18px;
+            position: sticky;
+            top: 18px
+        }
+
+        .toc h2 {
+            margin: 0 0 12px;
+            font-size: .78rem;
+            letter-spacing: .13em;
+            text-transform: uppercase;
+            color: var(--steel)
+        }
+
+        .toc ol {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            counter-reset: toc
+        }
+
+        .toc li {
+            counter-increment: toc
+        }
+
+        .toc a {
+            display: flex;
+            gap: 9px;
+            padding: 7px 5px;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #46536c;
+            font-size: .83rem;
+            line-height: 1.35
+        }
+
+        .toc a:before {
+            content: counter(toc, decimal-leading-zero);
+            font-size: .68rem;
+            color: var(--steel);
+            font-weight: 900
+        }
+
+        .toc a:hover {
+            background: #fff3bf;
+            color: var(--navy)
+        }
+
+        .policy {
+            padding: clamp(24px, 4vw, 48px);
+            min-width: 0
+        }
+
+        .intro {
+            padding: 19px 21px;
+            background: #fff7d5;
+            border-left: 4px solid var(--honey);
+            border-radius: 12px;
+            margin-bottom: 34px;
+            color: #3e4960
+        }
+
+        .intro strong {
+            color: var(--navy)
+        }
+
+        .section {
+            padding: 26px 0 28px;
+            border-bottom: 1px solid var(--line);
+            scroll-margin-top: 22px
+        }
+
+        .section:first-of-type {
+            padding-top: 0
+        }
+
+        .section:last-of-type {
+            border-bottom: 0;
+            padding-bottom: 0
+        }
+
+        .section h2 {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin: 0 0 13px;
+            color: var(--navy);
+            font-size: clamp(1.2rem, 2.4vw, 1.48rem);
+            line-height: 1.3;
+            letter-spacing: -.025em
+        }
+
+        .num {
+            flex: 0 0 35px;
+            width: 35px;
+            height: 35px;
+            display: grid;
+            place-items: center;
+            border-radius: 11px;
+            background: var(--honey);
+            color: var(--navy);
+            box-shadow: 0 3px 0 #d19c00;
+            font-size: .85rem;
+            font-weight: 950
+        }
+
+        p {
+            margin: 0 0 13px
+        }
+
+        p:last-child {
+            margin-bottom: 0
+        }
+
+        ul {
+            margin: 10px 0 16px;
+            padding-left: 1.35rem
+        }
+
+        li {
+            margin: 7px 0;
+            padding-left: 3px
+        }
+
+        li::marker {
+            color: var(--orange)
+        }
+
+        .note {
+            margin: 17px 0;
+            padding: 15px 17px;
+            border-radius: 12px;
+            background: #edf8f5;
+            border: 1px solid #cdece3
+        }
+
+        .note strong {
+            color: #126b5a
+        }
+
+        .links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 14px
+        }
+
+        .links a {
+            padding: 9px 12px;
+            border-radius: 10px;
+            background: #eef2fa;
+            border: 1px solid #dce4f3;
+            text-decoration: none;
+            font-size: .88rem;
+            font-weight: 750
+        }
+
+        .contact {
+            margin-top: 16px;
+            border-radius: 16px;
+            padding: 20px;
+            background: linear-gradient(135deg, #fff1a5, #ffe18a);
+            border: 1px solid #f2d66b
+        }
+
+        .contact strong {
+            display: block;
+            color: var(--navy);
+            font-size: 1.05rem
+        }
+
+        .placeholder {
+            color: #7a4b00;
+            font-weight: 800;
+            overflow-wrap: anywhere
+        }
+
+        footer {
+            background: var(--navy);
+            color: #c7d2e8;
+            padding: 28px 20px;
+            text-align: center;
+            font-size: .84rem
+        }
+
+        footer strong {
+            color: white
+        }
+
+        .dots {
+            display: flex;
+            justify-content: center;
+            gap: 7px;
+            margin-bottom: 12px
+        }
+
+        .dots i {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%
+        }
+
+        .dots i:nth-child(1) {
+            background: var(--coral)
+        }
+
+        .dots i:nth-child(2) {
+            background: var(--mint)
+        }
+
+        .dots i:nth-child(3) {
+            background: var(--sky)
+        }
+
+        .dots i:nth-child(4) {
+            background: var(--plum)
+        }
+
+        .dots i:nth-child(5) {
+            background: var(--honey)
+        }
+
+        @media(max-width:820px) {
+            .layout {
+                grid-template-columns: 1fr;
+                margin-top: -24px
+            }
+
+            .toc {
+                position: static
+            }
+
+            .toc ol {
+                display: grid;
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 2px 8px
+            }
+
+            .hero {
+                padding-top: 50px;
+                padding-bottom: 62px
+            }
+        }
+
+        @media(max-width:520px) {
+            .topbar-inner {
+                width: calc(100% - 28px);
+                min-height: 66px
+            }
+
+            .brand {
+                font-size: 1.1rem
+            }
+
+            .mark {
+                width: 37px;
+                height: 37px
+            }
+
+            .top-label {
+                font-size: .68rem;
+                padding: 6px 9px
+            }
+
+            .layout {
+                width: calc(100% - 24px);
+                gap: 14px;
+                margin-bottom: 44px
+            }
+
+            .toc {
+                padding: 18px 14px
+            }
+
+            .toc ol {
+                grid-template-columns: 1fr
+            }
+
+            .policy {
+                padding: 23px 19px;
+                border-radius: 18px
+            }
+
+            .hero {
+                padding-left: 16px;
+                padding-right: 16px
+            }
+
+            .meta {
+                gap: 7px
+            }
+
+            .meta span {
+                font-size: .76rem
+            }
+        }
+
+        @media print {
+            body {
+                background: white
+            }
+
+            .topbar,
+            .hero {
+                print-color-adjust: exact;
+                -webkit-print-color-adjust: exact
+            }
+
+            .layout {
+                display: block;
+                width: 100%;
+                margin: 20px auto
+            }
+
+            .toc {
+                display: none
+            }
+
+            .policy {
+                box-shadow: none;
+                border: 0;
+                padding: 0
+            }
+
+            .section {
+                break-inside: avoid
+            }
+
+            footer {
+                margin-top: 25px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="topbar">
+        <div class="topbar-inner">
+            <a class="brand" href="#" aria-label="Parcel Loop home">
+                <img src="./logo.png" width="120" height="120" alt="" class="mark">
+            </a>
+            <span class="top-label">Privacy &amp;transparency</span>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="hero-inner"><span class="eyebrow">Player information</span>
+            <h1>Privacy <span>Policy</span></h1>
+            <p>We want Parcel Loop to be fun, clear and respectful of your privacy. Here’s what information the game
+                uses, why it’s used, and the choices available to you.</p>
+            <div class="meta"><span><strong>Effective date</strong> · November 3, 2026</span><span>iPhone · iPad ·
+                    Android</span><span>No game account required</span></div>
+        </div>
+    </section>
+    <main class="layout">
+        <nav class="toc" aria-label="Table of contents">
+            <h2>On this page</h2>
+            <ol>
+                <li><a href="#device">On-device information</a></li>
+                <li><a href="#analytics">Analytics</a></li>
+                <li><a href="#crashes">Crash reports</a></li>
+                <li><a href="#ads">Advertising</a></li>
+                <li><a href="#notifications">Push notifications</a></li>
+                <li><a href="#leaderboards">Leaderboards</a></li>
+                <li><a href="#purchases">Purchases</a></li>
+                <li><a href="#legal-bases">Legal bases</a></li>
+                <li><a href="#recipients">Who receives information</a></li>
+                <li><a href="#rights">Your rights</a></li>
+                <li><a href="#children">Children</a></li>
+                <li><a href="#retention">Security &amp; retention</a></li>
+                <li><a href="#changes">Policy changes</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ol>
+        </nav>
+        <article class="policy">
+            <div class="intro"><strong>The short version:</strong> Parcel Loop does not require an account and does not
+                ask for your name, email address, phone number or other contact details to play. Some third-party
+                services help us understand crashes and gameplay, deliver ads, send notifications, support leaderboards
+                and process purchases.</div>
+            <section class="section" id="device">
+                <h2><span class="num">01</span>Information kept on your device</h2>
+                <p>Your progress, stars, coins, gems, lives, power-ups, belt themes, settings and the factory name you
+                    choose are saved on your device only. We do not receive this information. Deleting the game deletes
+                    it.</p>
+            </section>
+            <section class="section" id="analytics">
+                <h2><span class="num">02</span>Analytics</h2>
+                <p>We use Google Analytics for Firebase to understand how the game is played and to make it better. It
+                    receives:</p>
+                <ul>
+                    <li>Gameplay events, such as levels started and finished, results, stars, scores, mistakes, time
+                        played, power-ups used, coins and gems earned and spent, purchases made, ads watched, settings
+                        changed and screens opened.</li>
+                    <li>A random app instance identifier, your device model, operating system version, app version,
+                        language, and your approximate country and region, worked out from your IP address.</li>
+                </ul>
+                <p>This information is not used to identify you personally and is never sold. Google keeps analytics
+                    data for up to 14 months.</p>
+            </section>
+            <section class="section" id="crashes">
+                <h2><span class="num">03</span>Crash reports</h2>
+                <p>If the game crashes or hits an error, Firebase Crashlytics sends a report with technical details: the
+                    error, the state of the app, your device model, operating system version and a random installation
+                    identifier. We use it only to find and fix problems.</p>
+            </section>
+            <section class="section" id="ads">
+                <h2><span class="num">04</span>Advertising</h2>
+                <p>The game is free and shows ads through Google AdMob. To show, limit and measure ads, AdMob may
+                    collect your device's advertising identifier (IDFA on iOS, Advertising ID on Android), your IP
+                    address and approximate location, and information about the ads you see and tap.</p>
+                <ul>
+                    <li>In the European Economic Area, the United Kingdom and Switzerland, and where other laws require
+                        it, you are asked for consent before personalised ads are shown. You can change your choice at
+                        any time in the game under <strong>Settings &gt; Privacy choices</strong>.</li>
+                    <li>On iPhone and iPad, the advertising identifier is only used for tracking if you allow it when
+                        the game asks. You can change this at any time in your device's <strong>Settings &gt; Privacy
+                            &amp; Security &gt; Tracking</strong>.</li>
+                    <li>On Android, you can reset or delete your Advertising ID in your device's settings.</li>
+                </ul>
+                <div class="note"><strong>Rewarded ads are optional.</strong> You choose to watch one in exchange for a
+                    reward. Buying “No Ads” removes the ads shown between levels.</div>
+                <p>With your tracking permission, the game also uses what happens in it, such as your coins and recent
+                    results, on your device to decide when to offer extras like double coins. This information does not
+                    leave your device.</p>
+            </section>
+            <section class="section" id="notifications">
+                <h2><span class="num">05</span>Push notifications</h2>
+                <p>If you allow notifications, Firebase Cloud Messaging gives your device a token so that we can send
+                    you news and reminders about the game. You can turn notifications off at any time in your device's
+                    settings.</p>
+            </section>
+            <section class="section" id="leaderboards">
+                <h2><span class="num">06</span>Leaderboards</h2>
+                <p>If you are signed in to Apple Game Center or Google Play Games, your score (the number of parcels you
+                    have shipped) is sent to Apple or Google together with your player profile, and shown to other
+                    players on the leaderboard. Your player name and profile are managed by Apple or Google under their
+                    own privacy policies.</p>
+            </section>
+            <section class="section" id="purchases">
+                <h2><span class="num">07</span>Purchases</h2>
+                <p>In-app purchases are processed by the Apple App Store or Google Play. We never receive your payment
+                    details. We receive only a confirmation of what was bought, so the game can deliver it and restore
+                    it.</p>
+            </section>
+            <section class="section" id="legal-bases">
+                <h2><span class="num">08</span>Why we use information (legal bases)</h2>
+                <p>Where the EU or UK General Data Protection Regulation applies, we rely on:</p>
+                <ul>
+                    <li><strong>Performance of our agreement with you</strong> to run the game, deliver purchases and
+                        show leaderboards.</li>
+                    <li><strong>Our legitimate interests</strong> to understand how the game is played, keep it working
+                        and fix crashes.</li>
+                    <li><strong>Your consent</strong> for personalised advertising, tracking and push notifications. You
+                        can withdraw consent at any time as described above.</li>
+                </ul>
+            </section>
+            <section class="section" id="recipients">
+                <h2><span class="num">09</span>Who receives information</h2>
+                <p>Information is processed by the service providers named below, acting for us or as independent
+                    controllers:</p>
+                <ul>
+                    <li>Google LLC (Firebase Analytics, Firebase Crashlytics, Firebase Cloud Messaging, AdMob, Google
+                        Play Games).</li>
+                    <li>Apple Inc. (App Store, Game Center).</li>
+                </ul>
+                <p>These providers may process information in the United States and other countries, under safeguards
+                    such as the EU Standard Contractual Clauses. We do not sell your personal information and we do not
+                    share it for any other purpose.</p>
+                <div class="links"><a href="https://policies.google.com/privacy" target="_blank"
+                        rel="noopener noreferrer">Google Privacy Policy ↗</a><a
+                        href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Apple
+                        Privacy Policy ↗</a></div>
+            </section>
+            <section class="section" id="rights">
+                <h2><span class="num">10</span>Your rights</h2>
+                <p>Depending on where you live (for example under the GDPR, UK GDPR, the California Consumer Privacy Act
+                    or the Brazilian LGPD), you may have the right to access, correct or delete personal information, to
+                    object to or restrict its use, to data portability, and to withdraw consent. Residents of California
+                    may opt out of the “sharing” of personal information for targeted advertising by declining tracking
+                    or personalised ads as described in section 4.</p>
+                <p>Because the game has no accounts, we cannot link analytics data to you by name. To make a request,
+                    contact us and include the device you play on; we will help as far as we can identify the data. You
+                    also have the right to complain to your local data protection authority.</p>
+            </section>
+            <section class="section" id="children">
+                <h2><span class="num">11</span>Children</h2>
+                <p>Parcel Loop is a general-audience game and is not directed at children under 13 (or the minimum age
+                    in your country). We do not knowingly collect personal information from children. If you believe a
+                    child has provided us with personal information, contact us and we will delete it.</p>
+            </section>
+            <section class="section" id="retention">
+                <h2><span class="num">12</span>Security and retention</h2>
+                <p>Information sent by the game travels encrypted. Analytics data is kept for up to 14 months and crash
+                    reports for up to 90 days, after which they are deleted by Google. Information on your device stays
+                    until you delete the game.</p>
+            </section>
+            <section class="section" id="changes">
+                <h2><span class="num">13</span>Changes to this policy</h2>
+                <p>We may update this policy when the game changes. The new version will be published in the game and on
+                    our website with a new effective date. Significant changes will be announced in the game.</p>
+            </section>
+            <section class="section" id="contact">
+                <h2><span class="num">14</span>Contact</h2>
+                <p>If you have questions about this policy or want to make a privacy request, contact LumaLoop Game
+                    Studio.</p>
+                <div class="contact"><strong>LumaLoop Game Studio</strong><span
+                        class="placeholder">lumaloop@game.com</span>
+                    <p style="margin-top:8px">In the game: <strong>Settings &gt; Contact support</strong></p>
+                </div>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <div class="dots" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div><strong>Parcel Loop</strong> ·
+        Made by LumaLoop Game Studio<div>Privacy Policy · Effective November 3, 2026</div>
+    </footer>
+</body>
+
+</html>
